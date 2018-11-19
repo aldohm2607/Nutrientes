@@ -115,7 +115,7 @@
         <div class="row">
           <div class="col-md-3">
             <h5>
-            <input type="checkbox" id="sin9">Necrosis en bordes y puntas de hojas adultas, intervenal.
+            <input type="checkbox" id="sin9">Necrosis en bordes y puntas de hojas adultas, intervenal en las hojas adultas.
             </h5>
           </div>
           <div class="col-md-3">
@@ -190,7 +190,7 @@
   <div class="row">
     <div class="col-md-3">
       <h5>
-      <input type="checkbox" id="sin21">Tallos inusualmente rígidos y frágiles.
+      <input type="checkbox" id="sin21">Tallos inusualmente rígidos, frágiles y ramificados.
       </h5>
     </div>
     <div class="col-md-3">
@@ -200,7 +200,7 @@
     </div>
     <div class="col-md-3">
       <h5>
-      <input type="checkbox" id="sin23">Hojas verde oscuro.
+      <input type="checkbox" id="sin23">Hojas verde oscuro con malformaciones.
       </h5>
     </div>
     <div class="col-md-3">
@@ -225,7 +225,7 @@
   </div>
   <div class="col-md-3">
     <h5>
-    <input type="checkbox" id="sin27">Clorosis intervenal.
+    <input type="checkbox" id="sin27">Clorosis intervenal en hojas adultas.
     </h5>
   </div>
   <div class="col-md-3">
@@ -249,7 +249,7 @@
   </div>
   <div class="col-md-3">
     <h5>
-    <input type="checkbox" id="sin31">Clorois y necrosis en las hojas.
+    <input type="checkbox" id="sin31">Clorosis en las hojas.
     </h5>
   </div>
   <div class="col-md-3">
@@ -268,7 +268,7 @@
   </div>
   <div class="col-md-3">
     <h5>
-    <input type="checkbox" id="sin34">Clorosis y negrosisi uniforme en las hojas.
+    <input type="checkbox" id="sin44">Clorosis y necrosis uniforme en las hojas.
     </h5>
   </div>
   <div class="col-md-3">
@@ -302,12 +302,31 @@
   </div>
   <div class="col-md-3">
     <h5>
-    <input type="checkbox" id="sin40">Manchas necrosadas.
+    <input type="checkbox" id="sin40">Manchas necrosadas en hojas adultas.
     </h5>
   </div>
 </div>
 
 <br>
+
+<br>
+<div class="row">
+  <div class="col-md-3">
+    <h5>
+    <input type="checkbox" id="sin41">Manchas cloróticas en hojas jóvenes y ápices..
+    </h5>
+  </div>
+  <div class="col-md-3">
+    <h5>
+    <input type="checkbox" id="sin42">Clorosis y necrosisi uniforme en las hojas.
+    </h5>
+  </div>
+  <div class="col-md-3">
+    <h5>
+    <input type="checkbox" id="sin43">Necrosis en las hojas.
+    </h5>
+  </div>
+</div>
 
 
 
@@ -327,7 +346,7 @@
 
           <script type="text/javascript">
             function nutriente(){
-              if ((document.getElementById('sin1').checked)&&(document.getElementById('sin2').checked))
+              if ((document.getElementById('sin1').checked)&&(document.getElementById('sin2').checked)&&(document.getElementById('sin7').checked))
               {
                 alert("Hemos encontrado un deficit que coincide con esos sintomas.");
                 document.getElementById('identi').innerHTML= 'El deficit que puede presentar es de :';
@@ -343,7 +362,7 @@
                 document.getElementById('identi').innerHTML= 'El deficit que puede presentar es de :';
                 document.getElementById("imagen").src="img/magnesio.png";
               }
-              else if ((document.getElementById('sin8').checked)&&(document.getElementById('sin6').checked))
+              else if ((document.getElementById('sin8').checked)&&(document.getElementById('sin6').checked)&&(document.getElementById('sin41').checked))
               {
                 alert("Hemos encontrado un deficit que coincide con esos sintomas.");
                 document.getElementById('identi').innerHTML= 'El deficit que puede presentar es de :';
@@ -354,33 +373,33 @@
                 document.getElementById('identi').innerHTML= 'El deficit que puede presentar es de :';
                 document.getElementById("imagen").src="img/potasio.png";
               }
-              else if ((document.getElementById('sin12').checked))
+              else if ((document.getElementById('sin12').checked)&&(document.getElementById('sin2').checked)&&(document.getElementById('sin42').checked))
               {
                 alert("Hemos encontrado un deficit que coincide con esos sintomas.");
                 document.getElementById('identi').innerHTML= 'El deficit que puede presentar es de :';
                 document.getElementById("imagen").src="img/hierro.png";
               }
-              else if ((document.getElementById('sin8').checked)&&(document.getElementById('sin13').checked)&&(document.getElementById('sin15').checked)&&(document.getElementById('sin16').checked)) {
+              else if ((document.getElementById('sin8').checked)&&(document.getElementById('sin13').checked)&&(document.getElementById('sin15').checked)) {
                 alert("Hemos encontrado un deficit que coincide con esos sintomas.");
                 document.getElementById('identi').innerHTML= 'El deficit que puede presentar es de :';
                 document.getElementById("imagen").src="img/zinc.png";
               }
-              else if ((document.getElementById('sin17').checked)&&(document.getElementById('sin18').checked)&&(document.getElementById('sin19').checked)&&(document.getElementById('sin20').checked)&&(document.getElementById('sin2').checked)) {
+              else if ((document.getElementById('sin17').checked)&&(document.getElementById('sin2').checked)&&(document.getElementById('sin19').checked)) {
                 alert("Hemos encontrado un deficit que coincide con esos sintomas.");
                 document.getElementById('identi').innerHTML= 'El deficit que puede presentar es de :';
                 document.getElementById("imagen").src="img/calcio.png";
               }
-              else if ((document.getElementById('sin17').checked)&&(document.getElementById('sin21').checked)&&(document.getElementById('21').checked)&&(document.getElementById('2').checked)) {
+              else if ((document.getElementById('sin17').checked)&&(document.getElementById('sin2').checked)&&(document.getElementById('sin21').checked)) {
                 alert("Hemos encontrado un deficit que coincide con esos sintomas.");
                 document.getElementById('identi').innerHTML= 'El deficit que puede presentar es de :';
                 document.getElementById("imagen").src="img/boro.png";
               }
-              else if ((document.getElementById('sin23').checked)&&(document.getElementById('sin24').checked)&&(document.getElementById('sin25').checked)&&(document.getElementById('sin17').checked)&&(document.getElementById('sin7').checked)) {
+              else if ((document.getElementById('sin23').checked)&&(document.getElementById('sin17').checked)&&(document.getElementById('sin7').checked)) {
                 alert("Hemos encontrado un deficit que coincide con esos sintomas.");
                 document.getElementById('identi').innerHTML= 'El deficit que puede presentar es de :';
                 document.getElementById("imagen").src="img/cobre.png";
               }
-              else if ((document.getElementById('sin26').checked)&&(document.getElementById('sin27').checked))
+              else if ((document.getElementById('sin26').checked)&&(document.getElementById('sin27').checked)&&(document.getElementById('sin27').checked))
               {
                 alert("Hemos encontrado un deficit que coincide con esos sintomas.");
                 document.getElementById('identi').innerHTML= 'El deficit que puede presentar es de :';
@@ -392,19 +411,19 @@
                 document.getElementById('identi').innerHTML= 'El deficit que puede presentar es de :';
                 document.getElementById("imagen").src="img/niquel.png";
               }
-              else if ((document.getElementById('sin31').checked)&&(document.getElementById('sin32').checked))
+              else if ((document.getElementById('sin31').checked)&&(document.getElementById('sin32').checked)&&(document.getElementById('sin43').checked))
               {
                 alert("Hemos encontrado un deficit que coincide con esos sintomas.");
                 document.getElementById('identi').innerHTML= 'El deficit que puede presentar es de :';
                 document.getElementById("imagen").src="img/sodio.png";
               }
-              else if ((document.getElementById('sin33').checked)&&(document.getElementById('sin34').checked)&&(document.getElementById('sin35').checked)&&(document.getElementById('sin36').checked))
+              else if ((document.getElementById('sin44').checked)&&(document.getElementById('sin34').checked)&&(document.getElementById('sin35').checked))
               {
                 alert("Hemos encontrado un deficit que coincide con esos sintomas.");
                 document.getElementById('identi').innerHTML= 'El deficit que puede presentar es de :';
                 document.getElementById("imagen").src="img/cloro.png";
               }
-              else if ((document.getElementById('sin37').checked)&&(document.getElementById('sin38').checked)&&(document.getElementById('sin39').checked)&&(document.getElementById('sin40').checked)&&(document.getElementById('sin14').checked))
+              else if ((document.getElementById('sin37').checked)&&(document.getElementById('sin38').checked)&&(document.getElementById('sin14').checked))
               {
                 alert("Hemos encontrado un deficit que coincide con esos sintomas.");
                 document.getElementById('identi').innerHTML= 'El deficit que puede presentar es de :';
